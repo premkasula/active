@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table align="center" >
+    <tr><td>{% include 'title.html' %}</td></tr>
+</table>
+    {% include 'menu.html' %}<br><br><br>
+{% if Sign %}
+    <table align="center">
+    <tr><td>Login</td></tr>
+    <tr><td><input type="text" name="username" placeholder="username" style="-moz-box-sizing: content-box   " required></td></tr>
+    <tr><td><input type="password" name="password" placeholder="password" required></td></tr>
+    <tr><td><select name="user_type">
+        <option>Login as</option>
+        <option>Admin</option>
+        <option>Officer</option>
+        <option>Citizen</option>
+    </select> </td></tr>
+    <tr><td align="center"><button type="submit">Submit</button></td></tr>
+
+
+</table>
+
+{% endif %}
+
+</body>
+</html>
